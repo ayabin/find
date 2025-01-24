@@ -1,0 +1,9 @@
+@use "define";
+
+ul{
+    list-style-type: none;
+    &.error{
+        color: define.$danger;
+        font-size: .9rem;
+    }
+}

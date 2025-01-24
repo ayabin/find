@@ -1,0 +1,49 @@
+@use "define";
+
+form {
+    border: define.$ccc;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    width: 480px;
+    @media screen and (max-width: 480px) {
+        border: define.$ccc;
+        width: 100%;
+        padding: 0.5rem;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+        @media screen and (max-width: 480px) {
+            width: 100%;
+            padding: 0.5rem;
+        }
+    }
+    input {
+        padding: 0.5rem 1rem;
+        outline: none;
+        border: define.$ccc;
+        border-radius: 0.5rem;
+        &[type="text"] {
+            width: 100%;
+        }
+        &[type="checkbox"],
+        &[type="radio"] {
+            margin-right: 0.5rem;
+        }
+    }
+    a {
+        margin: 1rem 0;
+    }
+    &#send-verification {
+        display: none;
+        border: none;
+        border: define.$c00;
+    }
+}
+
+.form-attention {
+    width: 480px;
+    max-width: 90%;
+    padding: 0.5rem 1rem;
+}

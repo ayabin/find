@@ -1,0 +1,30 @@
+@use "define";
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    text-align: right;
+    width: auto;
+    .account-field{
+        border: define.$ccc;
+        text-align: left;
+        width: 160px;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        background-color: #fff;
+        margin-top: 1.5rem;
+        opacity: .9;
+    }
+    form{
+        padding: 0;
+        width: 100%;
+        border: none;
+        a{
+            margin: 0 .5rem;
+        }
+    }
+}

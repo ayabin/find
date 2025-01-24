@@ -1,0 +1,70 @@
+@use "define";
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: define.$ccc;
+    padding: 0.5rem 1rem;
+    height: define.$headerHeight;
+    position: relative;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: define.$headerHeight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: define.$ccc;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    background-color: #fff;
+}
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    @media screen and (max-width: 480px) {
+        padding: 0.5rem 0;
+    }
+    .container {
+        width: 1240px;
+        padding: 0.5rem 1rem;
+        padding-bottom: 5rem;
+        border: define.$ccc;
+        @media screen and (max-width: 480px) {
+            width: 100%;
+            padding: 0.5rem;
+        }
+    }
+    .center-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: calc(
+            100vh - define.$headerHeight - define.$footerHeight - 0.5rem * 2
+        );
+        @media screen and (max-width: 480px) {
+            justify-content: flex-start;
+        }
+    }
+    .profile-edit {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        section {
+            width: 480px;
+            max-width: 100%;
+            margin-bottom: 2rem;
+            header {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

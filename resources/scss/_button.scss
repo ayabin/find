@@ -1,0 +1,9 @@
+@use "define";
+
+button{
+    padding: .5rem 1rem;
+    background-color: #fff;
+    border: define.$ccc;
+    border-radius: .5rem;
+    cursor: pointer;
+}
